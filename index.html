@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/dist.css" />
+    <title>Login Tailwind CSS 2.0</title>
+  </head>
+  <body class="font-sans">
+    <div
+      class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8"
+    >
+      <div class="max-w-md w-full space-y-8">
+        <!-- Logo and title -->
+        <div>
+          <img
+            class="mx-auto h-12 w-auto"
+            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+            alt="Workflow"
+          />
+          <h2 class="mt-6 text-center text-3xl uppercase tracking-tight	 font-extrabold text-gray-900">
+            Sign in to your account
+          </h2>
+          <p class="mt-2 text-center text-sm text-gray-600">
+            Or
+            <a
+              href="#"
+              class="font-medium text-indigo-600 hover:text-indigo-500"
+            >
+              start your 14-day free trial
+            </a>
+          </p>
+        </div>
+        <!-- END Logo and title -->
+
+        
+        <div class="bg-gray-50 border p-5 rounded-2xl shadow-lg">
+          <form class="my-5 space-y-6" >
+            <div class="space-y-6">
+              <!--Email Section-->
+              <section class="flex flex-col mb-4">
+                <label for="email" class="mb-2 font-medium text-gray-800"
+                  >Email Address</label
+                >
+                <input
+                  autocomplete="email"
+                  class=" shadow-sm py-2 px-3 rounded-md focus:ring-2 focus:ring-blue-600 focus:outline-none focus:border-0"
+                  type="email"
+                  name="email"
+                  placeholder="Enter Email Here"
+                />
+              </section>
+
+              <!--Password Section-->
+              <section class="flex flex-col mb-4">
+                <label for="password" class="mb-2 font-medium text-gray-800">Password</label>
+                <input
+                  autocomplete="password"
+                  class="shadow-sm py-2 px-3 rounded-md focus:ring-2 focus:ring-blue-600 focus:outline-none"
+                  type="password"
+                  name="password"
+                  placeholder="Enter Password Here"
+                />
+              </section>
+            </div>
+
+            <!-- forget password -->
+            <div class="flex items-center justify-center">
+              <div class="text-sm">
+                <a
+                  href="#"
+                  class="font-medium text-indigo-600 hover:text-indigo-500"
+                >
+                  Forgot your password?
+                </a>
+              </div>
+            </div>
+            <!-- End forget password -->
+
+            <!-- Button Sign in -->
+            <button
+              type="submit"
+              class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            >
+              <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                <!-- Heroicon name: solid/lock-closed -->
+                <svg
+                  class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              Sign in
+            </button>
+            <!-- End Button Sign in -->
+          </form>
+
+          <!-- Continue with -->
+          <section
+            class="w-full flex justify-center items-center space-x-3 p-2"
+          >
+            <div class="w-28 h-0.5 rounded-full bg-gray-300"></div>
+            <div class="text-center text-gray-500">Or continue with</div>
+            <div class="w-28 h-0.5 rounded-full bg-gray-300"></div>
+          </section>
+          <!-- END Continue with -->
+
+          <!-- Social media -->
+          <section class="mt-5 w-full flex items-center justify-evenly mb-5">
+            <svg
+              class="hover:bg-indigo-700 cursor-pointer fill-current text-white bg-indigo-600 rounded-md px-4 py-2 w-20 h-10"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"
+              />
+            </svg>
+
+            <svg
+              class="hover:bg-indigo-700 cursor-pointer fill-current text-white bg-indigo-600 rounded-md px-4 py-2 w-20 h-10"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+              />
+            </svg>
+            <svg
+              class="hover:bg-indigo-700 cursor-pointer fill-current text-white bg-indigo-600 shadow-md rounded-md px-4 py-2 w-20 h-10"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M467 61H45C20.187 61 0 81.187 0 106v300c0 24.813 20.187 45 45 45h422c24.813 0 45-20.187 45-45V106c0-24.813-20.187-45-45-45zm-65.19 30L256 199.785 110.19 91zM45 91h15.021L247.03 230.523c2.661 1.985 5.815 2.977 8.97 2.977s6.309-.992 8.97-2.977L451.979 91H467c8.265 0 14.989 6.719 14.999 14.982L256 274.778 30.001 105.982C30.011 97.719 36.735 91 45 91zm202.024 214.518c2.662 1.988 5.819 2.982 8.976 2.982s6.314-.994 8.976-2.982L422 188.238V421H90V188.238zM30 406V143.425l30 22.407V421H45c-8.271 0-15-6.729-15-15zm437 15h-15V165.832l30-22.407V406c0 8.271-6.729 15-15 15z"
+              />
+            </svg>
+          </section>
+          <!-- END Social media -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
