@@ -1,10 +1,8 @@
 module.exports = {
   purge: {
-    enabled: true, //true for production build
-    content: [
-     '*.html'
-    ]
-   },
+    enabled: true, //true for production build
+    content: ["*.html"],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
